@@ -1,31 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Fylo data storage component</title>
+    <title>Frontend Mentor | Fylo data storage component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  You’ve used 815 GB of your storage
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="fylo">
+        <img src="images/logo.svg" />
+        <div class="logos">
+          <div id="document">
+            <img src="images/icon-document.svg" width="20" height="24" />
+          </div>
+          <div id="folder">
+            <img src="images/icon-folder.svg" width="24" height="20" />
+          </div>
+          <div id="upload">
+            <img src="images/icon-upload.svg" width="24" height="16" />
+          </div>
+        </div>
+      </div>
+      <div class="storage">
+        <h1>You’ve used <b>815 GB</b> of your storage</h1>
+        <div class="slider">
+          <div id="outer">
+          <div id="inner">
+          <div id="ball"></div>
+          </div>
+        </div>
+      </div>
+      <div class="range">
+        <h1><b>0 GB</b></h1> <h1><b>1000 GB</b></h1>
+        
+      </div>
+      <div class="GBLeft">
+        <h1><b>185</b></h1><span>GB LEFT</span>
+      </div>
+    </div>
+    
+    </div>
+    <!-- You’ve used 815 GB of your storage
 
   185 GB Left
   
   0 GB
-  1000 GB
-  
-  <div class="attribution">
+  1000 GB -->
+
+    <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+  </div> -->
+  </body>
 </html>
